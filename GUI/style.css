@@ -8,12 +8,8 @@
     font-family: "Poppins", sans-serif;
 }
 
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #6990F2;
+:root {
+    --clr: #222327;
 }
 
 ::selection {
@@ -21,10 +17,167 @@ body {
     background: #6990F2;
 }
 
+body {
+    font-family: "montserrat";
+    display: -moz-grid-line;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #6990F2;
+}
+
+nav {
+    font-family: "montserrat";
+    position: relative;
+    margin: 12% auto 0;
+    width: 40%;
+    height: 50px;
+    background: #34495e;
+    border-radius: 8px;
+    font-size: 0;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);
+}
+
+nav a {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    text-align: center;
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    height: 5px;
+    /* top: 0; */
+    bottom: 0;
+    z-index: 0;
+    background: #1abc9c;
+    border-radius: 8px;
+    transition: all .5s ease 0s;
+}
+
+nav a:nth-child(1) {
+    width: 20%;
+}
+
+a:nth-child(1):hover~.animation {
+    width: 20%;
+    left: 0;
+}
+
+nav a:nth-child(2) {
+    width: 20%;
+}
+
+nav a:nth-child(2):hover~.animation {
+    width: 20%;
+    left: 20%;
+}
+
+nav a:nth-child(3) {
+    width: 20%;
+}
+
+nav a:nth-child(3):hover~.animation {
+    width: 20%;
+    left: 40%;
+}
+
+nav a:nth-child(4) {
+    width: 20%;
+}
+
+nav a:nth-child(4):hover~.animation {
+    width: 20%;
+    left: 60%;
+}
+
+nav a:nth-child(5) {
+    width: 20%;
+}
+
+nav a:nth-child(5):hover~.animation {
+    width: 20%;
+    left: 80%;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: inherit;
+    background-color: transparent;
+    width: 40px;
+    height: 80px;
+    border: none;
+    cursor: pointer;
+}
+
+#text-input {
+    margin-top: 10px;
+    border: 1.5px solid #1abc9c;
+    padding: 20px;
+    height: 40vh;
+}
+
+.container {
+    text-align: center;
+    /* margin-top: 360px; */
+}
+
+.btn {
+    border: 1px solid #3498db;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn1 {
+    color: #3498db;
+}
+
+.btn1:hover {
+    color: #fff;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s;
+}
+
+.btn1::before {
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.btn1:hover::before {
+    height: 180%;
+}
+
 .wrapper {
-    width: 430px;
+    font-family: "montserrat";
+    width: 37%;
+    position: relative;
+    margin: 20px auto 0;
     background: #fff;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 30px;
     box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.05);
 }
@@ -49,6 +202,7 @@ body {
 }
 
 form :where(i, p) {
+    font-family: "montserrat";
     color: #6990F2;
 }
 

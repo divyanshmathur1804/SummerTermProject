@@ -11,8 +11,19 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header>File Uploader</header>
+    <nav>
+        <a href="#" onclick="divVisibility('div1')">TXT File</a>
+        <a href="#" onclick="divVisibility('div2')">Image</a>
+        <a href="#" onclick="divVisibility('div3')">Audio</a>
+        <a href="#" onclick="divVisibility('div4')">Video</a>
+        <a href="#" onclick="divVisibility('div5')">Text</a>
+        <div class="animation start-home"></div>
+    </nav>
+    <div id="div1" class="wrapper">
+        <header>Text File Uploader</header>
+        <center>
+            <p>only file with extension .txt</p>
+        </center>
         <form action="#">
             <input class="file-input" type="file" name="file" hidden>
             <i class="fas fa-cloud-upload-alt"></i>
@@ -21,9 +32,56 @@
         <section class="progress-area"></section>
         <section class="uploaded-area"></section>
     </div>
+    <div id="div2" style="display: none;" class="wrapper">
+        <header>Image File Uploader</header>
+        <center>
+            <p>only file with extension .jpg, .jpeg, .png</p>
+        </center>
+        <form action="#">
+            <input class="file-input" type="file" name="file" hidden>
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Browse File to Upload</p>
+        </form>
+        <section class="progress-area"></section>
+        <section class="uploaded-area"></section>
+    </div>
+    <div id="div3" style="display: none;" class="wrapper">
+        <header>Audio File Uploader</header>
+        <center>
+            <p>only file with extension .mp3</p>
+        </center>
+        <form action="#">
+            <input class="file-input" type="file" name="file" hidden>
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Browse File to Upload</p>
+        </form>
+        <section class="progress-area"></section>
+        <section class="uploaded-area"></section>
+    </div>
+    <div id="div4" style="display: none;" class="wrapper">
+        <header>Video File Uploader</header>
+        <center>
+            <p>only file with extension .mp4, .mkv</p>
+        </center>
+        <form action="#">
+            <input class="file-input" type="file" name="file" hidden>
+            <i class="fas fa-cloud-upload-alt"></i>
+            <p>Browse File to Upload</p>
+        </form>
+        <section class="progress-area"></section>
+        <section class="uploaded-area"></section>
+    </div>
+    <div id="div5" style="display: none;" class="wrapper">
+        <header>Enter Text</header>
+        <div id="text-input" contenteditable="true"></div>
+        <div class="container">
+            <button class="btn btn1">Submit</button>
+        </div>
+        <section class="progress-area"></section>
+        <section class="uploaded-area"></section>
+    </div>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>
