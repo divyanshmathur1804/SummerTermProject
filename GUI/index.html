@@ -6,80 +6,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Encryption tool</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 </head>
 
 <body>
-    <nav>
-        <a href="#" onclick="divVisibility('div1')">TXT File</a>
-        <a href="#" onclick="divVisibility('div2')">Image</a>
-        <a href="#" onclick="divVisibility('div3')">Audio</a>
-        <a href="#" onclick="divVisibility('div4')">Video</a>
-        <a href="#" onclick="divVisibility('div5')">Text</a>
-        <div class="animation start-home"></div>
-    </nav>
-    <div id="div1" class="wrapper">
-        <header>Text File Uploader</header>
-        <center>
-            <p>only file with extension .txt</p>
-        </center>
-        <form action="#">
-            <input class="file-input" type="file" name="file" hidden>
-            <i class="fas fa-cloud-upload-alt"></i>
-            <p>Browse File to Upload</p>
-        </form>
-        <section class="progress-area"></section>
-        <section class="uploaded-area"></section>
-    </div>
-    <div id="div2" style="display: none;" class="wrapper">
-        <header>Image File Uploader</header>
-        <center>
-            <p>only file with extension .jpg, .jpeg, .png</p>
-        </center>
-        <form action="#">
-            <input class="file-input" type="file" name="file" hidden>
-            <i class="fas fa-cloud-upload-alt"></i>
-            <p>Browse File to Upload</p>
-        </form>
-        <section class="progress-area"></section>
-        <section class="uploaded-area"></section>
-    </div>
-    <div id="div3" style="display: none;" class="wrapper">
-        <header>Audio File Uploader</header>
-        <center>
-            <p>only file with extension .mp3</p>
-        </center>
-        <form action="#">
-            <input class="file-input" type="file" name="file" hidden>
-            <i class="fas fa-cloud-upload-alt"></i>
-            <p>Browse File to Upload</p>
-        </form>
-        <section class="progress-area"></section>
-        <section class="uploaded-area"></section>
-    </div>
-    <div id="div4" style="display: none;" class="wrapper">
-        <header>Video File Uploader</header>
-        <center>
-            <p>only file with extension .mp4, .mkv</p>
-        </center>
-        <form action="#">
-            <input class="file-input" type="file" name="file" hidden>
-            <i class="fas fa-cloud-upload-alt"></i>
-            <p>Browse File to Upload</p>
-        </form>
-        <section class="progress-area"></section>
-        <section class="uploaded-area"></section>
-    </div>
-    <div id="div5" style="display: none;" class="wrapper">
-        <header>Enter Text</header>
-        <div id="text-input" contenteditable="true"></div>
-        <div class="container">
-            <button class="btn btn1">Submit</button>
+    <div class = "row">
+        <div class = "col-lg-6">
+            <div id="div2"  class="wrapper">
+                <header>Put your text here !!!</header>
+                <form class="text">
+                    
+                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter text">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your text with anyone else.</small>
+                    </form>
+                    <button  type="button" class="btn btn-primary">Submit</button>
+                </div>
+                </div>
+        <div class = "col-lg-6">
+            <div id="div1"  class="wrapper">
+            <header>Upload files other than .txt type</header>
+                    <form action="#" class="upload">
+                <input class="file-input" type="file" name="file" hidden>
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p>Browse File to Upload</p>
+            </form>
+            <button  type="button" class="btn btn-primary">Upload</button>
+            <section class="progress-area"></section>
+            <section class="uploaded-area"></section>
         </div>
-        <section class="progress-area"></section>
-        <section class="uploaded-area"></section>
+
+        </div>            
+
+        </div>
+    
+     
+            
     </div>
+    
+   
+        
+            
+        
+       
 
     <script src="script.js"></script>
 </body>
