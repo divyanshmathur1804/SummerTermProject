@@ -1,59 +1,87 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>File Encryption tool</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>File-Encryption Tool</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-</head>
+    <link href = "cyber.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&family=Ubuntu&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5c0d90f9b8.js" crossorigin="anonymous"></script>
+<script defer src="cyber.js"></script>
+    </head>
+    <body>
+        <section id="title" class="hidden">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+          
+                    <a class="navbar-brand" href="index.html"> File-Encrypter</a>
+                    </nav>
+                    <div class="row">
+                        <div class="col-lg-10">
+                        <h1>Now no one can breach your data,Get your data Encrypted in just one click..</h1>
+                        <button type="button" class="btn btn-secondary ">Text</button>
+                        <button type="button" class="btn btn-secondary ">Multimedia</button>
+                    </div>
+                        </div>
+                        
+            </div>
+        </section>
+        <section id="Text" class="hidden">
+            <div class="row">
+                <h1>Your Safety Our Concern !!</h1>
+                <div class="container">
+                    <div class="wrapper">
+                      
+                      <h2> Put Your Text here</h2>
+                      <form class="Text-form">
+                        <div class="form-group">
+                          
+                          <input type="email" class="form-control" id="InputText" aria-describedby="emailHelp" placeholder="Enter Text">
+                          <small id="emailHelp" class="form-text text-muted">We'll never share your text with anyone else.</small>
+                        </div>
+                     </div>
+                     <button type="button" class="btn btn-secondary textbtn">Submit</button>
+                       </div>
+                   </div>
+            </div>
+        </section>
+        <section id="Multimedia" class="hidden">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2>Upload the multimedia files you want to get Encrypted here</h2>
+                    <h4>
+                        (Any Audio,Video or Image file.)
+                    </h4>
 
-<body>
-    <div class = "row">
-        <div class = "col-lg-6">
-            <div id="div2"  class="wrapper">
-                <header>Put your text here !!!</header>
-                <form class="text">
+
+                </div>
+                <div class="col-lg-6">
+                    <div class="container-multimedia">
+                        <div class="wrapper-multimedia">
+                          
+                          <h2> Put Your Text here</h2>
+                          <form class="Multimedia-form">
+                            <div class="form-group-m">
+                              <input type="file" name="file" class="file-input" accept="image/*,video/*,audio/*,.mkv" hidden>
+                              <i class="fas fa-cloud-upload-alt"></i>
+                              <label>Browse File</label>
+                            </div>
+                            </form>
+                         </div>
+                         <button type="button" class="btn btn-secondary textbtn">Upload</button>
+                           </div>
                     
-                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter text">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your text with anyone else.</small>
-                    </form>
-                    <button  type="button" class="btn btn-primary">Submit</button>
+                    
+                    
+
+                
                 </div>
-                </div>
-        <div class = "col-lg-6">
-            <div id="div1"  class="wrapper">
-            <header>Upload files other than .txt type</header>
-                    <form action="#" class="upload">
-                <input class="file-input" type="file" name="file" hidden>
-                <i class="fas fa-cloud-upload-alt"></i>
-                <p>Browse File to Upload</p>
-            </form>
-            <button  type="button" class="btn btn-primary">Upload</button>
-            <section class="progress-area"></section>
-            <section class="uploaded-area"></section>
         </div>
-
-        </div>            
-
-        </div>
-    
-     
-            
-    </div>
-    
-   
+        </section>
         
-            
-        
-       
-
-    <script src="script.js"></script>
-</body>
-
+    </body>
 </html>
